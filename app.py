@@ -25,7 +25,10 @@ def row_server(input, output, session):
 app_ui = ui.page_fluid(
     ui.input_slider("num_UIs", "How many numbers?", 1, 10, 2),
     ui.output_ui("dyno_ui"),
-    ui.output_text("out_sum")
+    ui.output_text("out_sum"),
+    ui.hr(),
+    ui.h3("Github Link"),
+    ui.markdown("https://github.com/phobson/shiny-dynamic-module-ui")
 )
 
 
